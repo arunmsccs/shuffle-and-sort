@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 0;
+}
+main{
+    width: 100%;
+    border-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+section.numbers{
+    width: 100%;
+    
+}
+section.actions{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+li{ 
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    margin:5px 10% 0px 10%;
+    background-color: #EFEFEF
+
+}
+.color1,
+.color8 {
+    border-left: 6px solid #6F98A8;
+}
+.color2,
+.color4 {
+    border-left: 6px solid#2B8EAD;
+}
+.color3,
+.color5,
+.color9 {
+    border-left: 6px solid #2F454E;
+}
+.color6,
+.color7 {
+    border-left: 6px solid #BFBFBF;
+}
+button{
+    width: 30%;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #72C3DC;
+    border: 1px solid #72C3DC;
+    border-radius: 7px;
+    color: #ffffff;
+    box-shadow: 0px 5px #2B8EAD;
+    cursor: pointer;
+    outline: none;
+}
+button:disabled{
+    background-color: #BFBFBF;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0px 5px #EFEFEF;
+}
+footer{
+    text-align: right;
+    font-size: 10px;
+    margin: 10px;
+}
+input{
+    border: 0;
+    font-size: 10px;
+    width: 40%;
+    background-color: transparent;
+}
+
+
+@media (min-width: 390px) {
+    body {
+        background-color: #EFEFEF;
+    }
+    main{
+        flex-direction: row;
+        border-top: 5px solid #BFBFBF;
+    }
+    h1{
+        background-color: transparent;
+        color: #000000;
+        padding: 5px 0;
+    }
+    section.numbers{
+        width: 75%;
+    }
+    section.actions{
+        width: 25%;
+        padding: 2%;
+    }
+    li {
+        width: 33.3%;
+        float: left;
+        height: 30vh;
+        line-height: 32vh;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-size: 8em;
+        margin: 0;
+    }
+    .color1,
+    .color8 {
+        background-color:#6F98A8;
+    }
+    .color2,
+    .color4 {
+        background-color:#2B8EAD;
+    }
+    .color3,
+    .color5,
+    .color9 {
+        background-color:#2F454E;
+    }
+    .color6,
+    .color7 {
+        background-color:#BFBFBF;
+    }
+    button{
+        width: 50%;
+        padding: 10px;
+        margin: 15px;
+        text-align: left;
+    }
+    footer{
+        font-size: 14px;
+    }
+    input{
+        font-size: 14px;
+    }
+}
